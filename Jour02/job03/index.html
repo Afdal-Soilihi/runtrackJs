@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Compteurs de clics</title>
+</head>
+<body>
+
+<button id="button">Cliquez ici</button>
+<p id="compteur">0</p>
+    
+
+<script>
+    // Sélectionnez le bouton et le paragraphe
+  const button = document.getElementById("button");
+  const compteur = document.getElementById("compteur");
+
+  // Initialisez le compteur
+  let nombreClics = 0;
+
+  // Ajoutez un gestionnaire d'événements au bouton
+  button.addEventListener("click", addOne);
+
+  // Définissez la fonction pour ajouter un clic
+  function addOne() {
+    // Incrémentez le compteur de clics
+    nombreClics++;
+    // Mettez à jour le contenu du paragraphe avec le nouveau compteur
+    compteur.textContent = nombreClics.toString();
+  }    
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+/* Styles par défaut */
+body {
+    background-color: white;
+  }
+  
+  /* Styles pour La Plateforme */
+  .la-plateforme {
+    background-color: #007bff; /* Bleu La Plateforme */
+    color: white; /* Texte en blanc pour contraster */
+  }

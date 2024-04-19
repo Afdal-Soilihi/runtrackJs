@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Show/Hide Article</title>
+</head>
+<body>
+
+ <button id="button" onclick="showhide()">Afficher/ Masquer l'article</button>
+
+<article id="article"></article>
+    
+ <script>
+        function showhide() {
+            var article = document.getElementById("article");
+        
+            // Vérifier si l'article est visible
+            if (article.style.display === "none" || article.style.display === "") {
+              // Si l'article est caché, le rendre visible
+              article.style.display = "block";
+              article.innerText = "L'important n'est pas la chute, mais l'atterrissage.";
+            } else {
+              // Si l'article est visible, le cacher
+              article.style.display = "none";
+              article.innerText = "";
+            }
+          }
+</script>
+
+</body>
+
+</html>
