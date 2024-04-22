@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+</head>
+<body>
+    <h1>Page de Connexion</h1>
+    <form id="connexion-form" action="traitement_connexion.php" method="post">
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="password">Mot de passe :</label><br>
+        <input type="password" id="password" name="password" required><br>
+        
+        <button type="submit">Connexion</button>
+    </form>
+    <div id="connexion-errors"></div>
+
+    <script src="connexion.js"></script>
+</body>
+</html>
