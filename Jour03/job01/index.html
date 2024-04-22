@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+    <button id="showTextButton">Afficher le texte</button>
+    <button id="hideElementButton">Cacher l'élément</button>
+    <p id="quote"></p>
+    
+    <script>
+        // Sélectionner le bouton pour afficher le texte
+const showTextButton = document.getElementById('showTextButton');
+
+// Sélectionner le bouton pour cacher l'élément
+const hideElementButton = document.getElementById('hideElementButton');
+
+// Sélectionner l'élément de citation
+const quoteElement = document.getElementById('quote');
+
+// Définir le texte de la citation
+const quoteText = "Les logiciels et les cathédrales, c'est un peu la même chose - d'abord, on les construit, ensuite, on prie.";
+
+// Ajouter un écouteur d'événements pour le bouton d'affichage
+showTextButton.addEventListener('click', function() {
+    // Afficher le texte de la citation dans l'élément de citation
+    quoteElement.textContent = quoteText;
+});
+
+// Ajouter un écouteur d'événements pour le bouton de masquage
+hideElementButton.addEventListener('click', function() {
+    // Cacher l'élément de citation
+    quoteElement.style.display = 'none';
+});
+    </script>
+
+</body>
+
+</html>
