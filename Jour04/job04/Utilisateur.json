@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "nom": "Soilihi",
+        "prenom": "Afdal",
+        "email": "soilihi.afdal@gmail.com"
+    },
+    {
+        "id": 2,
+        "nom": "Said",
+        "prenom": "Fazla",
+        "email": "said.fazla@gmail.com"
+    },
+    {
+        "id": 3,
+        "nom": "Abdillah",
+        "prenom": "Omar",
+        "email": "abdillah.omar@gmail.com"
+    },
+    {
+        "id": 4,
+        "nom":"Athoumani",
+        "prenom": "Abdou-Raouf",
+        "email": "athoumani.abdou-raouf@laplateforme.io"
+    }
+    
+]

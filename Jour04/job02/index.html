@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Value Key</title>
+</head>
+<body>
+    <label for="jsonString">Chaîne JSON :</label>
+    <textarea id="jsonString" rows="4" cols="50">{"name": "John", "age": 30, "city": "Marseille"}</textarea><br>
+    <label for="key">Clé :</label>
+    <input type="text" id="key" value="city"><br>
+    <button onclick="displayValue()">Afficher la valeur</button>
+    <p id="result"></p>
+
+    <script>
+        function jsonValueKey(jsonString, key) {
+            try {
+                const jsonObject = JSON.parse(jsonString);
+                if (key in jsonObject) {
+                    return jsonObject[key];
+                } else {
+                    return "Clé non trouvée";
+                }
+            } catch (error) {
+                console.error("Erreur de parsing JSON :", error);
+                return null;
+            }
+        }
+
+        function displayValue() {
+            const jsonString = document.getElementById("jsonString").value;
+            const key = document.getElementById("key").value;
+            const value = jsonValueKey(jsonString, key);
+            document.getElementById("result").textContent = value;
+        }
+    </script>
+</body>
+</html>
